@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daix Ai | Socials</title>
+
+  <!-- Font Awesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+      font-family: "Poppins", sans-serif;
+      color-scheme: light dark; /* respects system theme */
+    }
+
+    /* Transparent backgrounds for both modes */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: rgba(0,0,0,0);
+      }
+    }
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: rgba(255,255,255,0);
+      }
+    }
+
+    /* Bottom-left social icons */
+    .wrapper {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .social {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .icon {
+      font-size: 1.6em;
+      color: #7a7a7a;
+      transition: color 0.3s ease;
+    }
+
+    .social:hover .icon {
+      color: #d40000; /* hover effect */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Bottom-left social icons -->
+  <div class="wrapper">
+    <a href="mailto:daix@daixcompose.com" class="social">
+      <i class="fa-solid fa-envelope icon"></i>
+    </a>
+    <a href="https://instagram.com/daixcompose" target="_blank" class="social">
+      <i class="fab fa-instagram icon"></i>
+    </a>
+    <a href="https://www.tiktok.com/@daixcompose" target="_blank" class="social">
+      <i class="fab fa-tiktok icon"></i>
+    </a>
+    <a href="https://www.youtube.com/" target="_blank" class="social">
+      <i class="fab fa-youtube icon"></i>
+    </a>
+    <a href="https://facebook.com/" target="_blank" class="social">
+      <i class="fab fa-facebook icon"></i>
+    </a>
+  </div>
+</body>
+</html>
